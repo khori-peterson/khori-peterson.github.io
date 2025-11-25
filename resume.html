@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Khori Peterson — Resume</title>
+  <style>
+    :root{
+      --accent:#0b6cff;
+      --muted:#666;
+      --bg:#f7f9fc;
+      --card:#fff;
+      --maxwidth:900px;
+      --pad:20px;
+      --radius:10px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:#111;
+    }
+    html,body{height:100%;margin:0;background:var(--bg);}
+    .container{
+      max-width:var(--maxwidth);
+      margin:30px auto;
+      padding:var(--pad);
+    }
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:0 8px 30px rgba(12,24,40,0.08);
+      padding:32px;
+    }
+    header{
+      display:flex;
+      align-items:flex-start;
+      gap:20px;
+      border-bottom:1px solid #eef2f6;
+      padding-bottom:18px;
+      margin-bottom:22px;
+    }
+    .name {
+      font-size:28px;
+      font-weight:700;
+      margin:0;
+      letter-spacing: -0.3px;
+    }
+    .sub {
+      color:var(--muted);
+      margin-top:6px;
+      font-size:14px;
+    }
+    .contact {
+      margin-left:auto;
+      text-align:right;
+      font-size:14px;
+      color:var(--muted);
+    }
+    .contact a { color:inherit; text-decoration:none; }
+    .two-col{
+      display:grid;
+      grid-template-columns:1fr 320px;
+      gap:28px;
+    }
+    @media (max-width:880px){
+      .two-col{ grid-template-columns: 1fr; }
+      .contact { text-align:left; margin-left:0; margin-top:8px; }
+    }
+    section { margin-bottom:18px; }
+    h2 {
+      font-size:16px;
+      margin:0 0 10px 0;
+      color:#0b6cff;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .muted { color:var(--muted); font-size:14px; }
+    .edu, .job, .project, .activity { margin-bottom:12px; }
+    .meta {
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      font-size:14px;
+      color:var(--muted);
+      align-items:center;
+    }
+    ul { margin:8px 0 0 18px; padding:0; }
+    li { margin-bottom:6px; line-height:1.45; }
+    .skill-list { display:flex; flex-wrap:wrap; gap:8px; }
+    .skill { background:#f1f6ff; color:#0b6cff; padding:6px 10px; border-radius:999px; font-size:13px; }
+    .side-card { background:#fbfdff; padding:18px; border-radius:8px; }
+    .section-title { margin-bottom:8px; font-weight:600; font-size:14px; color:#213547; }
+    footer { margin-top:18px; font-size:12px; color:var(--muted); text-align:center; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div>
+          <h1 class="name">Khori Peterson</h1>
+          <div class="sub">Bachelor of Science in Computer Science — Minor: Criminology & Criminal Justice</div>
+        </div>
+
+        <div class="contact">
+          <div><a href="tel:+18646425515">+1 (864) 642-5515</a></div>
+          <div><a href="mailto:khori.peterson@gmail.com">khori.peterson@gmail.com</a></div>
+          <div><a href="https://www.linkedin.com/in/khori-peterson-14052337a/" target="_blank" rel="noopener">linkedin.com/in/khori-peterson-14052337a</a></div>
+        </div>
+      </header>
+
+      <div class="two-col">
+        <!-- Left (main) column -->
+        <main>
+          <section aria-labelledby="education-heading">
+            <h2 id="education-heading">Education</h2>
+            <div class="edu">
+              <div class="meta">
+                <div>
+                  <strong>University of South Carolina — Columbia, SC</strong>
+                  <div class="muted">Bachelor of Science in Computer Science • Minor: Criminology & Criminal Justice</div>
+                </div>
+                <div class="muted">August 2025 – Present</div>
+              </div>
+              <div class="muted" style="margin-top:8px;">
+                Honors & Awards: SC LIFE Scholarship; National African American Recognition Award; Advanced Placement Scholar with Distinction; Hal Warlick Scholar; Trio Opportunity Scholar
+              </div>
+            </div>
+          </section>
+
+          <section aria-labelledby="coursework-heading">
+            <h2 id="coursework-heading">Relative Coursework</h2>
+            <div class="muted">Algorithmic Design I • Computing in the Modern World</div>
+          </section>
+
+          <section aria-labelledby="experience-heading">
+            <h2 id="experience-heading">Related Work Experience</h2>
+
+            <div class="job">
+              <div class="meta">
+                <div><strong>Footlocker — Part-Time Sales Associate</strong><div class="muted">Greenville, SC</div></div>
+                <div class="muted">June 2023 – Present</div>
+              </div>
+              <ul>
+                <li>Operated a point-of-sale system and processed 200+ weekly transactions efficiently and securely.</li>
+                <li>Consistently exceeded daily and weekly sales targets, generating up to $5,000 in footwear and apparel revenue in a single shift.</li>
+                <li>Advised customers on fit, style, and performance while managing inventory and maintaining brand-standard visual displays.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <div class="meta">
+                <div><strong>Hollister Co. — Part-Time Sales Associate</strong><div class="muted">Greenville, SC</div></div>
+                <div class="muted">June 2023 – January 2024</div>
+              </div>
+              <ul>
+                <li>Delivered attentive customer service by guiding shoppers through product selection, fitting room coordination, and seasonal promotions to increase sales.</li>
+                <li>Contributed to store efficiency through floor set changes, restocking, and teamwork to maintain brand presentation standards.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <div class="meta">
+                <div><strong>Dority & Manning P.A — Intellectual Property Intern</strong><div class="muted">Greenville, SC</div></div>
+                <div class="muted">May 2024 – Present</div>
+              </div>
+              <ul>
+                <li>Support attorneys and staff with patent research, filing, processing transfers, and patent proofing.</li>
+                <li>Prepare and process thousands of IDS submissions for patent applications while maintaining 100% compliance with USPTO regulations.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Relevant Projects</h2>
+            <div class="project">
+              <div class="meta">
+                <div><strong>Capstone Research Project — Team Member</strong><div class="muted">Greenville, SC</div></div>
+                <div class="muted">Fall 2024 – Spring 2025</div>
+              </div>
+              <ul>
+                <li>Conducted an original mixed-methods research project on student perceptions of political bias in high school history and government classrooms.</li>
+                <li>Designed and executed all research stages and produced actionable insights on how teacher political leanings influence civic education and student engagement.</li>
+              </ul>
+            </div>
+          </section>
+        </main>
+
+        <!-- Right (side) column -->
+        <aside>
+          <div class="side-card">
+            <div class="section-title">Skills</div>
+            <div class="skill-list" aria-hidden="false">
+              <span class="skill">HTML</span>
+              <span class="skill">Java</span>
+              <span class="skill">Python</span>
+              <span class="skill">Eclipse IDE</span>
+              <span class="skill">Visual Studio Code</span>
+              <span class="skill">Microsoft Office</span>
+              <span class="skill">Windows</span>
+              <span class="skill">macOS</span>
+            </div>
+
+            <hr style="margin:14px 0;border:none;border-top:1px solid #eef2f6;" />
+
+            <div class="section-title">Extracurricular</div>
+            <div class="activity">
+              <strong>Kappa Mu</strong>
+              <div class="muted">Member — August 2025 – Present</div>
+            </div>
+            <div class="activity">
+              <strong>National Society of Black Engineers</strong>
+              <div class="muted">Club Member — August 2025 – Present</div>
+            </div>
+            <div class="activity">
+              <strong>Association for Computing Machinery</strong>
+              <div class="muted">Member — August 2025 – Present</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        Generated from uploaded resume. :contentReference[oaicite:1]{index=1}
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
