@@ -1,107 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
     <title>CSCE 190: Khori Peterson</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>Khori Peterson</h1>
 
-    <div class="about">
-        <h2>About me</h2>
-        <p>My mission is to pursue a career in computer science with a focus on cybersecurity and 
-artificial intelligence, where I can leverage my problem-solving skills and technical 
-knowledge to protect and advance national security. I aim to continously grow through 
-seeking out new opportunities to develop my expertise in programing, data analysis, and 
-other emerging technologies.</p>
-    </div>
+    <header>
+        <h1 class="title">Khori Peterson</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="resume.html">Resume</a>
+        </nav>
+    </header>
 
-    <div class="skills">
-        <h2>Skills</h2>
-    </div>
+    <section id="about" class="card about">
+        <h2>About Me</h2>
+        <p>
+            My mission is to pursue a career in computer science with a focus on cybersecurity,
+            artificial intelligence, and intellectual property law. I want to use my technical
+            background to help protect innovation, strengthen national security, and support the
+            people and ideas shaping our digital world. I’m committed to growing my skills through
+            opportunities in programming, data analysis, and emerging technologies.
+        </p>
+    </section>
 
-    <div class="projects">
-        <h2>Highlighted projects</h2>
-<!-- CSCE 145 Java Review Project -->
-<section class="project">
-    <a href="csce145-review/index.html">
-        <h3>CSCE 145 — Java Concepts Review</h3>
-    </a>
-    <a href="https://khori-peterson.github.io/CSCEreview.github.io/">
-        <img src="images/csce145_preview.png" alt="CSCE 145 Review Page Preview">
-    </a>
-    <p>
-        A summary page reviewing key Java topics from CSCE-145, including getters, 
-        setters, accessors, mutators, encapsulation, and the toString method. 
-        Includes formatted examples and a clean UI.
-    </p>
-</section>
-<section class="project">
-<a href="https://github.com/">
-<h3>Algorithmic Design I Review</h3>
-</a>
-<a href="https://github.com/">
-<img src="images/algorithmic_design.png">
-</a>
-<p>Brief description of the repo</p>
-</section>
-        <!-- Problem Statement Assignment -->
-        <section class="project">
-            <a href="files/ProblemStatement_KhoriPeterson.pdf">
-                <h3>Problem Statement</h3>
-            </a>
-            <a href="files/ProblemStatement_KhoriPeterson.pdf">
-                <img src="images/ProblemStatement.png" alt="Problem Statement Preview">
-            </a>
-            <p>
-                Students at the University of South Carolina struggle to keep track of their retail 
-                meal swipes because the balance is only available through a separate app.
-            </p>
-        </section>
+    <section id="projects">
+        <h2 class="section-title">Highlighted Projects</h2>
 
-        <!-- Affinity Diagram Assignment -->
-        <section class="project">
-            <a href="files/AffinityDiagram.pdf">
-                <h3>Affinity Diagram</h3>
-            </a>
-            <a href="files/AffinityDiagram.pdf">
-                <img src="images/AffinityDiagram.png" alt="Affinity Diagram Preview">
-            </a>
-            <p>
-                This diagram organizes key ideas into clusters to explore different aspects of integrating 
-                retail meal swipe tracking into the Grubhub app, including technology, funding, challenges, 
-                marketing, and future growth.
-            </p>
-        </section>
+        <div class="project-grid">
 
-        <!-- Sketches Assignment -->
-        <section class="project">
-            <a href="files/Sketches_DOC.pdf">
-                <h3>Sketches</h3>
-            </a>
-            <a href="files/Sketches_DOC.pdf">
-                <img src="images/Sketches_IMG.jpg" alt="Sketches Preview">
-            </a>
-            <p>
-                The three sketches show how retail meal swipes would appear within the Grubhub app. 
-                The first sketch shows how the retail swipes will be integrated into placing food orders. 
-                The second sketch shows how the retail swipe tracker can be used and how it can help reduce 
-                retail swipe waste across campus. The third sketches have potential features that 
-                could be implemented.
-            </p>
-        </section>
-    </div>
+            <!-- CSCE 145 Review -->
+            <div class="project-card">
+                <a href="csce145-review/index.html">
+                    <h3>CSCE 145 — Java Concepts Review</h3>
+                </a>
+                <a href="https://khori-peterson.github.io/CSCEreview.github.io/">
+                    <img src="images/csce145_preview.png" alt="CSCE 145 Review Preview">
+                </a>
+                <p>
+                    A summary page reviewing key Java topics including getters, setters,
+                    mutators, encapsulation, and toString.
+                </p>
+            </div>
 
-    <div class="contact">
-        <h2>Contact me</h2>
-    </div>
+            <!-- Algorithmic Design -->
+            <div class="project-card">
+                <a href="https://github.com/">
+                    <h3>Algorithmic Design I Review</h3>
+                </a>
+                <a href="https://github.com/">
+                    <img src="images/algorithmic_design.png" alt="Algorithmic Design Preview">
+                </a>
+                <p>Overview of core CSCE 145 and 146 concepts.</p>
+            </div>
 
-    <span>
-        My resume:
-        <a href="/mnt/data/Resume_KhoriPeterson.pdf" download>PDF version</a> |
-        <a href="resume.html">HTML version</a>
-    </span>
+            <!-- Problem Statement -->
+            <div class="project-card">
+                <a href="files/ProblemStatement_KhoriPeterson.pdf">
+                    <h3>Problem Statement</h3>
+                </a>
+                <a href="files/ProblemStatement_KhoriPeterson.pdf">
+                    <img src="images/ProblemStatement.png" alt="Problem Statement Preview">
+                </a>
+                <p>
+                    Students struggle to track retail meal swipes because the balance is
+                    only available through a separate app.
+                </p>
+            </div>
+
+            <!-- Affinity Diagram -->
+            <div class="project-card">
+                <a href="files/AffinityDiagram.pdf">
+                    <h3>Affinity Diagram</h3>
+                </a>
+                <a href="files/AffinityDiagram.pdf">
+                    <img src="images/AffinityDiagram.png" alt="Affinity Diagram Preview">
+                </a>
+                <p>
+                    Clusters ideas for integrating retail swipe tracking into Grubhub,
+                    including tech, funding, challenges, and marketing.
+                </p>
+            </div>
+
+            <!-- Sketches -->
+            <div class="project-card">
+                <a href="files/Sketches_DOC.pdf">
+                    <h3>Sketches</h3>
+                </a>
+                <a href="files/Sketches_DOC.pdf">
+                    <img src="images/Sketches_IMG.jpg" alt="Sketches Preview">
+                </a>
+                <p>
+                    Three sketches showing how retail swipes could appear within the Grubhub app.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="card contact">
+        <h2>Contact</h2>
+        <p>Email: your_email@student.sc.edu</p>
+        <p>GitHub: <a href="https://github.com/khori-peterson">khori-peterson</a></p>
+    </section>
+
+    <footer>
+        <p>
+            My resume:
+            <a href="/mnt/data/Resume_KhoriPeterson.pdf" download>PDF</a> |
+            <a href="resume.html">HTML</a>
+        </p>
+    </footer>
 
 </body>
+
 </html>

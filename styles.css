@@ -1,23 +1,86 @@
-body{
-background: #FAB5AE; 
-font-family:"Times New Roman", Times, serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-h1 {
-text-align: center;
-color: #7b3b06;
+
+/* Background + global font */
+body {
+    background: #f7d9d4;       /* soft blush pink */
+    font-family: "Segoe UI", sans-serif;
+    color: #4d2d17;
+    line-height: 1.6;
+    padding-bottom: 40px;
 }
-.projects { display:flex; flex-wrap:wrap; } /* condensed to save space */
-.project {
-width: 30%;
-margin: 10px;
-padding: 20px 10px;
-background: white; /* pick a color */
-border-radius: 25%;
+
+/* Header + navigation */
+header {
+    text-align: center;
+    padding: 25px 0;
 }
-.project img {
+
+.title {
+    font-size: 2.5rem;
+    color: #7b3b06;
+    margin-bottom: 15px;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #7b3b06;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section titles */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* Card layout for About + Contact */
+.card {
+    background: white;
+    width: 85%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Projects grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.project-card {
+    background: white;
+    padding: 18px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.project-card img {
     width: 100%;
-    height: auto;   /* This prevents squishing */
-    max-width: 400px; /* Optional: keeps images from getting too big */
-    display: block;
+    border-radius: 10px;
     margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #4d2d17;
 }
