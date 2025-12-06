@@ -35,6 +35,14 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+.project-card a {
+    text-decoration: none;     /* removes underline */
+    color: inherit;            /* uses normal text color */
+}
+
+.project-card a:hover h3 {
+    text-decoration: underline; /* optional: underline only on hover */
+}
 
 /* Section titles */
 .section-title {
